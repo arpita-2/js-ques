@@ -13,7 +13,7 @@ function calculateTriangleArea() {
   const breadth = parseFloat(document.getElementById("numberBreadth").value);
   const height = parseFloat(document.getElementById("numberHeight").value);
   const areaOfTriangle = 0.5 * breadth * height;
-  document.getElementById("TriangleArea").textContent =
+  document.getElementById("triangleArea").textContent =
     "Area of Triangle: " + areaOfTriangle;
 }
 
@@ -22,7 +22,7 @@ function calculateRectangleArea() {
   const width = parseFloat(document.getElementById("numberWidth").value);
   const length = parseFloat(document.getElementById("numberLength").value);
   const areaOfRectangle = width * length;
-  document.getElementById("RectangleArea").textContent =
+  document.getElementById("rectangleArea").textContent =
     "Area of Rectangle: " + areaOfRectangle;
 }
 
@@ -33,8 +33,28 @@ function calculateIsocelesArea() {
     document.getElementById("numHeightIsoceles").value
   );
   const areaOfIsocelesTriangle = 0.5 * base * heightOfIsoceles;
-  document.getElementById("IsocelesArea").textContent =
+  document.getElementById("isocelesArea").textContent =
     "Area of  Isoceles Triangle: " + areaOfIsocelesTriangle;
 }
 
 //area of paralellogram
+function calculateParallelogramArea() {
+  const baseOfParalellogram = parseFloat(
+    document.getElementById("numBase").value
+  );
+  const heightOfParalellogram = parseFloat(
+    document.getElementById("numHeightPara").value
+  );
+  const areaOfParalellogram = baseOfParalellogram * heightOfParalellogram;
+  document.getElementById("parallelogramArea").textContent =
+    "Area of Paralellogram: " + areaOfParalellogram;
+}
+
+//area of Rhombus
+function calculateRhombusArea() {
+  const diagonalOne = parseFloat(document.getElementById("numDiagonal1").value);
+  const diagonal2 = parseFloat(document.getElementById("numDiagonal2").value);
+  const areaOfRhombus = 0.5 * diagonalOne * diagonal2;
+  document.getElementById("rhombusArea").textContent =
+    "Area of Rhombus: " + areaOfRhombus;
+}
