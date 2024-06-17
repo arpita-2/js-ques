@@ -16,3 +16,12 @@ function calculateTriangleArea() {
   document.getElementById("TriangleArea").textContent =
     "Area of Triangle: " + areaOfTriangle;
 }
+
+//area of rectangle
+function calculateRectangleArea() {
+  const width = parseFloat(document.getElementById("numberWidth").value);
+  const length = parseFloat(document.getElementById("numberLength").value);
+  const areaOfRectangle = width * length;
+  document.getElementById("RectangleArea").textContent =
+    "Area of Rectangle: " + areaOfRectangle;
+}
