@@ -58,3 +58,13 @@ function calculateRhombusArea() {
   document.getElementById("rhombusArea").textContent =
     "Area of Rhombus: " + areaOfRhombus;
 }
+
+//area of equilateral triangle
+
+function calculateEquilateralArea() {
+  const side = parseFloat(document.getElementById("numberArea").value);
+
+  const areaOfEquilateral = (Math.sqrt(3) / 4) * side ** 2;
+  document.getElementById("equilateralArea").textContent =
+    "Area of Equilateral: " + areaOfEquilateral;
+}
