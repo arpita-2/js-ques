@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-ques</title>
+  </head>
+  <body>
+    <h1>Calculations Of Area</h1>
+    <!--circle-->
+
+    <h2>Circle</h2>
+    <label for="circleRadius">Radius:</label>
+    <input type="number" id="circleRadius" step="1" />
+    <button onclick="calculateCircleArea()">Calculate Area</button>
+    <p id="circleArea"></p>
+
+    <!--Triangle-->
+    <h2>Triangle</h2>
+    <label for="numberBreadth">Breadth:</label>
+    <input type="number" id="numberBreadth" step="1" />
+
+    <label for="numberHeight">Height:</label>
+    <input type="number" id="numberHeight" step="1" />
+    <button onclick="calculateTriangleArea()">Calculate Area</button>
+    <p id="TriangleArea"></p>
+
+    <!--Rectangle-->
+    <h2>Rectangle</h2>
+    <label for="numberWidth">Width:</label>
+    <input type="number" id="numberWidth" step="1" />
+
+    <label for="numberLength">Length:</label>
+    <input type="number" id="numberLength" step="1" />
+    <button onclick="calculateRectangleArea()">Calculate Area</button>
+    <p id="RectangleArea"></p>
+
+    <!--Isoceles Triangle-->
+    <h2>Isoceles Triangle</h2>
+    <label for="numBaseIsoceles">Base:</label>
+    <input type="number" id="numBaseIsoceles" step="1" />
+
+    <label for="numHeightIsoceles">Height:</label>
+    <input type="number" id="numHeightIsoceles" step="1" />
+    <button onclick="calculateIsocelesArea()">Calculate Area</button>
+    <p id="IsocelesArea"></p>
+
+    <!--paralellogram -->
+    <h2>Paralellogram</h2>
+    <label for="numBase">Base:</label>
+    <input type="number" id="numBase" step="1" />
+
+    <label for="numHeightPara">Height:</label>
+    <input type="number" id="numHeightPara" step="1" />
+    <button onclick="calculateParallelogramArea()">Calculate Area</button>
+    <p id="ParallelogramArea"></p>
+
+    <!--Rhombus-->
+    <h2>Rhombus</h2>
+    <label for="numberBase">Base:</label>
+    <input type="number" id="numberBase" step="1" />
+
+    <label for="numHeight">Height:</label>
+    <input type="number" id="numHeight" step="1" />
+    <button onclick="calculateRhombusArea()">Calculate Area</button>
+    <p id="RhombusArea"></p>
+
+    <!--equilateral-->
+    <h2>Equilateral Triangle</h2>
+    <label for="numberArea">Side:</label>
+    <input type="number" id="numberArea" step="1" />
+
+    <button onclick="calculateEquilateralArea()">Calculate Area</button>
+    <p id="EquilateralArea"></p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
