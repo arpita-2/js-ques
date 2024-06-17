@@ -25,3 +25,16 @@ function calculateRectangleArea() {
   document.getElementById("RectangleArea").textContent =
     "Area of Rectangle: " + areaOfRectangle;
 }
+
+//area of Isoceles Triangle
+function calculateIsocelesArea() {
+  const base = parseFloat(document.getElementById("numBaseIsoceles").value);
+  const heightOfIsoceles = parseFloat(
+    document.getElementById("numHeightIsoceles").value
+  );
+  const areaOfIsocelesTriangle = 0.5 * base * heightOfIsoceles;
+  document.getElementById("IsocelesArea").textContent =
+    "Area of  Isoceles Triangle: " + areaOfIsocelesTriangle;
+}
+
+//area of paralellogram
