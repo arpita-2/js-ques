@@ -68,3 +68,14 @@ function calculateEquilateralArea() {
   document.getElementById("equilateralArea").textContent =
     "Area of Equilateral: " + areaOfEquilateral;
 }
+
+//perimeter of circle
+function calculatePerimeterOfCircle() {
+  const radiusOfCircle = parseFloat(
+    document.getElementById("perimeterCircle").value
+  );
+  const perimeterOfCircle = 2 * Math.PI * radiusOfCircle;
+
+  document.getElementById("circlePerimeter").textContent =
+    "Perimeter of Circle" + perimeterOfCircle;
+}
