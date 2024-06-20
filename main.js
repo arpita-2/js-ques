@@ -108,3 +108,18 @@ function calculatePerimeterOfParalellogram() {
   document.getElementById("paralellogramPerimeter").textContent =
     "Perimeter of paralellogram: " + perimeterOfParalellogram;
 }
+
+//perimeter of Rectangle
+
+function calculatePerimeterOfRectangle() {
+  const lengthRectangle = parseFloat(
+    document.getElementById("lengthRectangle").value
+  );
+  const widthRectangle = parseFloat(
+    document.getElementById("widthRectangle").value
+  );
+
+  const perimeterRectangle = 2 * (lengthRectangle + widthRectangle);
+  document.getElementById("rectanglePerimeter").textContent =
+    "Perimeter of Rectangle: " + perimeterRectangle;
+}
