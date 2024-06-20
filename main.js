@@ -159,3 +159,13 @@ function calculateVolumeCone() {
   document.getElementById("coneVolume").textContent =
     "Volume of Cone: " + volumeOfCone;
 }
+
+//volume of prism
+function calculateVolumePrism() {
+  const basePrism = parseFloat(document.getElementById("basePrism").value);
+  const heightPrism = parseFloat(document.getElementById("heightPrism").value);
+
+  const volumeOfPrism = basePrism * heightPrism;
+  document.getElementById("prismVolume").textContent =
+    "Volume of Prism: " + volumeOfPrism;
+}
