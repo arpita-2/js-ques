@@ -185,3 +185,31 @@ function calculateVolumeCylinder() {
 }
 
 //volume of sphere
+function calculateVolumeSphere() {
+  const radiusSphere = parseFloat(
+    document.getElementById("radiusSphere").value
+  );
+
+  const volumeOfSphere = (4 / 3) * Math.PI * radiusSphere ** 3;
+  document.getElementById("sphereVolume").textContent =
+    "Volume of Sphere: " + volumeOfSphere;
+}
+
+//volume of pyramid
+function calculateVolumePyramid() {
+  const lengthPyramid = parseFloat(
+    document.getElementById("lengthPyramid").value
+  );
+
+  const widthPyramid = parseFloat(
+    document.getElementById("widthPyramid").value
+  );
+
+  const heightPyramid = parseFloat(
+    document.getElementById("heightPyramid").value
+  );
+
+  const volumeOfPyramid = (lengthPyramid * widthPyramid * heightPyramid) / 3;
+  document.getElementById("pyramidVolume").textContent =
+    "Volume of Pyramid: " + volumeOfPyramid;
+}
