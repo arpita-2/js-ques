@@ -123,3 +123,13 @@ function calculatePerimeterOfRectangle() {
   document.getElementById("rectanglePerimeter").textContent =
     "Perimeter of Rectangle: " + perimeterRectangle;
 }
+
+//perimeter of Square
+
+function calculatePerimeterOfSquare() {
+  const sideSquare = parseFloat(document.getElementById("sideSquare").value);
+
+  const perimeterSquare = 4 * sideSquare;
+  document.getElementById("squarePerimeter").textContent =
+    "Perimeter of Square: " + perimeterSquare;
+}
