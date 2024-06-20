@@ -3,3 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(2, 99, 102);
+  padding: 2rem 2rem;
+}
+
+.navigation-bar h1 {
+  flex: 1 1 40rem;
+  font-size: 1.6rem;
+}
+
+.navigation-bar ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
