@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js-ques</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Calculations Of Area</h1>
+    <nav class="navigation-bar">
+      <h1>JS</h1>
+
+      <ul>
+        <li><a href="#">Area</a></li>
+        <li><a href="#">Perimeter</a></li>
+        <li><a href="#">Volume</a></li>
+      </ul>
+    </nav>
+
+    <h2>Calculations Of Area</h2>
     <!--circle-->
 
-    <h2>Circle</h2>
+    <h3>Circle</h3>
     <label for="circleRadius">Radius:</label>
     <input type="number" id="circleRadius" step="1" />
     <button onclick="calculateCircleArea()">Calculate Area</button>
     <p id="circleArea"></p>
 
     <!--Triangle-->
-    <h2>Triangle</h2>
+    <h3>Triangle</h3>
     <label for="numberBreadth">Breadth:</label>
     <input type="number" id="numberBreadth" step="1" />
 
@@ -26,7 +37,7 @@
     <p id="triangleArea"></p>
 
     <!--Rectangle-->
-    <h2>Rectangle</h2>
+    <h3>Rectangle</h3>
     <label for="numberWidth">Width:</label>
     <input type="number" id="numberWidth" step="1" />
 
@@ -36,7 +47,7 @@
     <p id="rectangleArea"></p>
 
     <!--Isoceles Triangle-->
-    <h2>Isoceles Triangle</h2>
+    <h3>Isoceles Triangle</h3>
     <label for="numBaseIsoceles">Base:</label>
     <input type="number" id="numBaseIsoceles" step="1" />
 
@@ -46,7 +57,7 @@
     <p id="isocelesArea"></p>
 
     <!--paralellogram -->
-    <h2>Paralellogram</h2>
+    <h3>Paralellogram</h3>
     <label for="numBase">Base:</label>
     <input type="number" id="numBase" step="1" />
 
@@ -56,7 +67,7 @@
     <p id="parallelogramArea"></p>
 
     <!--Rhombus-->
-    <h2>Rhombus</h2>
+    <h3>Rhombus</h3>
     <label for="numdiagonal1">D1:</label>
     <input type="number" id="numDiagonal1" step="1" />
 
@@ -66,21 +77,21 @@
     <p id="rhombusArea"></p>
 
     <!--equilateral-->
-    <h2>Equilateral Triangle</h2>
+    <h3>Equilateral Triangle</h3>
     <label for="numberArea">Side:</label>
     <input type="number" id="numberArea" step="1" />
     <button onclick="calculateEquilateralArea()">Calculate Area</button>
     <p id="equilateralArea"></p>
 
     <!--perimeter of circle-->
-    <h2>Perimeter of circle</h2>
+    <h3>Perimeter of circle</h3>
     <label for="perimeterCircle">Radius:</label>
     <input type="number" id="perimeterCircle" step="1" />
     <button onclick="calculatePerimeterOfCircle()">Calculate Perimeter</button>
     <p id="circlePerimeter"></p>
 
     <!--perimeter of Equilateral Triangle-->
-    <h2>Perimeter of Equilateral Triangle</h2>
+    <h3>Perimeter of Equilateral Triangle</h3>
     <label for="perimeterEquilateral">Side:</label>
     <input type="number" id="perimeterEquilateral" step="1" />
     <button onclick="calculatePerimeterOfEquilateral()">
@@ -89,7 +100,7 @@
     <p id="equilateralPerimeter"></p>
 
     <!--perimeter of paralellogram-->
-    <h2>Perimeter of Paralellogram</h2>
+    <h3>Perimeter of Paralellogram</h3>
     <label for="sideParalellogram">Side:</label>
     <input type="number" id="sideParalellogram" step="1" />
 
@@ -101,7 +112,7 @@
     <p id="paralellogramPerimeter"></p>
 
     <!--perimeter of Rectangle-->
-    <h2>Perimeter of Rectangle</h2>
+    <h3>Perimeter of Rectangle</h3>
     <label for="lengthRectangle">Length:</label>
     <input type="number" id="lengthRectangle" step="1" />
 
@@ -113,17 +124,17 @@
     <p id="rectanglePerimeter"></p>
 
     <!--perimeter of Square-->
-    <h2>Perimeter of Sqaure</h2>
+    <h3>Perimeter of Sqaure</h3>
     <label for="sideSquare">Side:</label>
     <input type="number" id="sideSquare" step="1" />
     <button onclick="calculatePerimeterOfSquare()">Calculate Perimeter</button>
     <p id="squarePerimeter"></p>
 
     <!--perimeter of Rhombus-->
-    <h2>Perimeter of Rhombus</h2>
+    <h3>Perimeter of Rhombus</h3>
     <label for="sideRhombus">Side:</label>
     <input type="number" id="sideRhombus" step="1" />
-    <button onclick="calculatePerimeterOfRhombus()">Calculate Perimeter</button>
+    <button id="calculatePerimeterRhombus">Calculate Perimeter</button>
     <p id="rhombusPerimeter"></p>
 
     <!--volume of cone program-->
