@@ -133,3 +133,29 @@ function calculatePerimeterOfSquare() {
   document.getElementById("squarePerimeter").textContent =
     "Perimeter of Square: " + perimeterSquare;
 }
+
+//perimeter of rhombus
+// const calculatePerimeterButton = document.getElementById(
+//   "calculatePerimeterRhombus"
+// );
+// calculatePerimeterButton.addEventListener("click", () => {
+
+//   const value = document.getElementById("sideRhombus").value;
+
+function calculatePerimeterOfRhombus() {
+  const sideRhombus = parseFloat(document.getElementById("sideRhombus").value);
+
+  const perimeterRhombus = 4 * sideRhombus;
+  document.getElementById("rhombusPerimeter").textContent =
+    "Perimeter of Rhombus: " + perimeterRhombus;
+}
+
+//volume of cone
+function calculateVolumeCone() {
+  const radiusCone = parseFloat(document.getElementById("radiusCone").value);
+  const heightCone = parseFloat(document.getElementById("heightCone").value);
+
+  const volumeOfCone = (Math.PI * radiusCone ** 2 * heightCone) / 3;
+  document.getElementById("coneVolume").textContent =
+    "Volume of Cone: " + volumeOfCone;
+}
