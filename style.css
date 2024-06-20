@@ -28,3 +28,11 @@ a {
   color: black;
   font-size: 1.3rem;
 }
+
+.container {
+  margin: 3rem 0rem 0rem 2rem;
+}
+
+h3 {
+  padding: 1.5rem;
+}
