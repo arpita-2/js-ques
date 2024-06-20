@@ -169,3 +169,19 @@ function calculateVolumePrism() {
   document.getElementById("prismVolume").textContent =
     "Volume of Prism: " + volumeOfPrism;
 }
+
+//volume of Cylinder
+function calculateVolumeCylinder() {
+  const radiusCylinder = parseFloat(
+    document.getElementById("radiusCylinder").value
+  );
+  const heightCylinder = parseFloat(
+    document.getElementById("heightCylinder").value
+  );
+
+  const volumeOfCylinder = Math.PI * radiusCylinder ** 2 * heightCylinder;
+  document.getElementById("cylinderVolume").textContent =
+    "Volume of Cylinder: " + volumeOfCylinder;
+}
+
+//volume of sphere
