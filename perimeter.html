@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-ques</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation-bar">
+      <h1>JS</h1>
+
+      <ul>
+        <li><a href="/index.html">Area</a></li>
+        <li><a href="#">Perimeter</a></li>
+        <li><a href="/volume.html">Volume</a></li>
+      </ul>
+    </nav>
+
+    <!--perimeter of circle-->
+    <div class="container">
+      <h3>Perimeter of circle</h3>
+      <label for="perimeterCircle">Radius:</label>
+      <input type="number" id="perimeterCircle" step="1" />
+      <button onclick="calculatePerimeterOfCircle()">
+        Calculate Perimeter
+      </button>
+      <p id="circlePerimeter"></p>
+
+      <!--perimeter of Equilateral Triangle-->
+      <h3>Perimeter of Equilateral Triangle</h3>
+      <label for="perimeterEquilateral">Side:</label>
+      <input type="number" id="perimeterEquilateral" step="1" />
+      <button onclick="calculatePerimeterOfEquilateral()">
+        Calculate Perimeter
+      </button>
+      <p id="equilateralPerimeter"></p>
+
+      <!--perimeter of paralellogram-->
+      <h3>Perimeter of Paralellogram</h3>
+      <label for="sideParalellogram">Side:</label>
+      <input type="number" id="sideParalellogram" step="1" />
+
+      <label for="baseParalellogram">Base:</label>
+      <input type="number" id="baseParalellogram" step="1" />
+      <button onclick="calculatePerimeterOfParalellogram()">
+        Calculate Perimeter
+      </button>
+      <p id="paralellogramPerimeter"></p>
+
+      <!--perimeter of Rectangle-->
+      <h3>Perimeter of Rectangle</h3>
+      <label for="lengthRectangle">Length:</label>
+      <input type="number" id="lengthRectangle" step="1" />
+
+      <label for="widthRectangle">Width:</label>
+      <input type="number" id="widthRectangle" step="1" />
+      <button onclick="calculatePerimeterOfRectangle()">
+        Calculate Perimeter
+      </button>
+      <p id="rectanglePerimeter"></p>
+
+      <!--perimeter of Square-->
+      <h3>Perimeter of Sqaure</h3>
+      <label for="sideSquare">Side:</label>
+      <input type="number" id="sideSquare" step="1" />
+      <button onclick="calculatePerimeterOfSquare()">
+        Calculate Perimeter
+      </button>
+      <p id="squarePerimeter"></p>
+
+      <!--perimeter of Rhombus-->
+      <h3>Perimeter of Rhombus</h3>
+      <label for="sideRhombus">Side:</label>
+      <input type="number" id="sideRhombus" step="1" />
+      <button onclick="calculatePerimeterOfRhombus()">
+        Calculate Perimeter
+      </button>
+      <p id="rhombusPerimeter"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
