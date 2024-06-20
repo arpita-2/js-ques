@@ -13,184 +13,77 @@
       <ul>
         <li><a href="#">Area</a></li>
         <li><a href="#">Perimeter</a></li>
-        <li><a href="#">Volume</a></li>
+        <li><a href="/volume.html">Volume</a></li>
       </ul>
     </nav>
 
-    <h2>Calculations Of Area</h2>
-    <!--circle-->
+    <div class="container">
+      <h2>Calculations Of Area</h2>
+      <!--circle-->
 
-    <h3>Circle</h3>
-    <label for="circleRadius">Radius:</label>
-    <input type="number" id="circleRadius" step="1" />
-    <button onclick="calculateCircleArea()">Calculate Area</button>
-    <p id="circleArea"></p>
+      <h3>Circle</h3>
+      <label for="circleRadius">Radius:</label>
+      <input type="number" id="circleRadius" step="1" />
+      <button onclick="calculateCircleArea()">Calculate Area</button>
+      <p id="circleArea"></p>
 
-    <!--Triangle-->
-    <h3>Triangle</h3>
-    <label for="numberBreadth">Breadth:</label>
-    <input type="number" id="numberBreadth" step="1" />
+      <!--Triangle-->
+      <h3>Triangle</h3>
+      <label for="numberBreadth">Breadth:</label>
+      <input type="number" id="numberBreadth" step="1" />
 
-    <label for="numberHeight">Height:</label>
-    <input type="number" id="numberHeight" step="1" />
-    <button onclick="calculateTriangleArea()">Calculate Area</button>
-    <p id="triangleArea"></p>
+      <label for="numberHeight">Height:</label>
+      <input type="number" id="numberHeight" step="1" />
+      <button onclick="calculateTriangleArea()">Calculate Area</button>
+      <p id="triangleArea"></p>
 
-    <!--Rectangle-->
-    <h3>Rectangle</h3>
-    <label for="numberWidth">Width:</label>
-    <input type="number" id="numberWidth" step="1" />
+      <!--Rectangle-->
+      <h3>Rectangle</h3>
+      <label for="numberWidth">Width:</label>
+      <input type="number" id="numberWidth" step="1" />
 
-    <label for="numberLength">Length:</label>
-    <input type="number" id="numberLength" step="1" />
-    <button onclick="calculateRectangleArea()">Calculate Area</button>
-    <p id="rectangleArea"></p>
+      <label for="numberLength">Length:</label>
+      <input type="number" id="numberLength" step="1" />
+      <button onclick="calculateRectangleArea()">Calculate Area</button>
+      <p id="rectangleArea"></p>
 
-    <!--Isoceles Triangle-->
-    <h3>Isoceles Triangle</h3>
-    <label for="numBaseIsoceles">Base:</label>
-    <input type="number" id="numBaseIsoceles" step="1" />
+      <!--Isoceles Triangle-->
+      <h3>Isoceles Triangle</h3>
+      <label for="numBaseIsoceles">Base:</label>
+      <input type="number" id="numBaseIsoceles" step="1" />
 
-    <label for="numHeightIsoceles">Height:</label>
-    <input type="number" id="numHeightIsoceles" step="1" />
-    <button onclick="calculateIsocelesArea()">Calculate Area</button>
-    <p id="isocelesArea"></p>
+      <label for="numHeightIsoceles">Height:</label>
+      <input type="number" id="numHeightIsoceles" step="1" />
+      <button onclick="calculateIsocelesArea()">Calculate Area</button>
+      <p id="isocelesArea"></p>
 
-    <!--paralellogram -->
-    <h3>Paralellogram</h3>
-    <label for="numBase">Base:</label>
-    <input type="number" id="numBase" step="1" />
+      <!--paralellogram -->
+      <h3>Paralellogram</h3>
+      <label for="numBase">Base:</label>
+      <input type="number" id="numBase" step="1" />
 
-    <label for="numHeightPara">Height:</label>
-    <input type="number" id="numHeightPara" step="1" />
-    <button onclick="calculateParallelogramArea()">Calculate Area</button>
-    <p id="parallelogramArea"></p>
+      <label for="numHeightPara">Height:</label>
+      <input type="number" id="numHeightPara" step="1" />
+      <button onclick="calculateParallelogramArea()">Calculate Area</button>
+      <p id="parallelogramArea"></p>
 
-    <!--Rhombus-->
-    <h3>Rhombus</h3>
-    <label for="numdiagonal1">D1:</label>
-    <input type="number" id="numDiagonal1" step="1" />
+      <!--Rhombus-->
+      <h3>Rhombus</h3>
+      <label for="numdiagonal1">D1:</label>
+      <input type="number" id="numDiagonal1" step="1" />
 
-    <label for="numdiagonal2">D2:</label>
-    <input type="number" id="numDiagonal2" step="1" />
-    <button onclick="calculateRhombusArea()">Calculate Area</button>
-    <p id="rhombusArea"></p>
+      <label for="numdiagonal2">D2:</label>
+      <input type="number" id="numDiagonal2" step="1" />
+      <button onclick="calculateRhombusArea()">Calculate Area</button>
+      <p id="rhombusArea"></p>
 
-    <!--equilateral-->
-    <h3>Equilateral Triangle</h3>
-    <label for="numberArea">Side:</label>
-    <input type="number" id="numberArea" step="1" />
-    <button onclick="calculateEquilateralArea()">Calculate Area</button>
-    <p id="equilateralArea"></p>
-
-    <!--perimeter of circle-->
-    <h3>Perimeter of circle</h3>
-    <label for="perimeterCircle">Radius:</label>
-    <input type="number" id="perimeterCircle" step="1" />
-    <button onclick="calculatePerimeterOfCircle()">Calculate Perimeter</button>
-    <p id="circlePerimeter"></p>
-
-    <!--perimeter of Equilateral Triangle-->
-    <h3>Perimeter of Equilateral Triangle</h3>
-    <label for="perimeterEquilateral">Side:</label>
-    <input type="number" id="perimeterEquilateral" step="1" />
-    <button onclick="calculatePerimeterOfEquilateral()">
-      Calculate Perimeter
-    </button>
-    <p id="equilateralPerimeter"></p>
-
-    <!--perimeter of paralellogram-->
-    <h3>Perimeter of Paralellogram</h3>
-    <label for="sideParalellogram">Side:</label>
-    <input type="number" id="sideParalellogram" step="1" />
-
-    <label for="baseParalellogram">Base:</label>
-    <input type="number" id="baseParalellogram" step="1" />
-    <button onclick="calculatePerimeterOfParalellogram()">
-      Calculate Perimeter
-    </button>
-    <p id="paralellogramPerimeter"></p>
-
-    <!--perimeter of Rectangle-->
-    <h3>Perimeter of Rectangle</h3>
-    <label for="lengthRectangle">Length:</label>
-    <input type="number" id="lengthRectangle" step="1" />
-
-    <label for="widthRectangle">Width:</label>
-    <input type="number" id="widthRectangle" step="1" />
-    <button onclick="calculatePerimeterOfRectangle()">
-      Calculate Perimeter
-    </button>
-    <p id="rectanglePerimeter"></p>
-
-    <!--perimeter of Square-->
-    <h3>Perimeter of Sqaure</h3>
-    <label for="sideSquare">Side:</label>
-    <input type="number" id="sideSquare" step="1" />
-    <button onclick="calculatePerimeterOfSquare()">Calculate Perimeter</button>
-    <p id="squarePerimeter"></p>
-
-    <!--perimeter of Rhombus-->
-    <h3>Perimeter of Rhombus</h3>
-    <label for="sideRhombus">Side:</label>
-    <input type="number" id="sideRhombus" step="1" />
-    <button onclick="calculatePerimeterOfRhombus()">Calculate Perimeter</button>
-    <p id="rhombusPerimeter"></p>
-
-    <!--volume of cone program-->
-    <h3>Volume of Cone</h3>
-    <label for="radiusCone">Radius:</label>
-    <input type="number" id="radiusCone" step="1" />
-
-    <label for="heightCone">Height:</label>
-    <input type="number" id="heightCone" step="1" />
-
-    <button onclick="calculateVolumeCone()">Calculate Volume</button>
-    <p id="coneVolume"></p>
-
-    <!--volume of prism-->
-    <h3>Volume of Prism</h3>
-    <label for="basePrism">Base:</label>
-    <input type="number" id="basePrism" step="1" />
-
-    <label for="heightPrism">Height:</label>
-    <input type="number" id="heightPrism" step="1" />
-
-    <button onclick="calculateVolumePrism()">Calculate Volume</button>
-    <p id="prismVolume"></p>
-
-    <!--volume of cylinder-->
-    <h3>Volume of Cylinder</h3>
-    <label for="radiusCylinder">Radius:</label>
-    <input type="number" id="radiusCylinder" step="1" />
-
-    <label for="heightCylinder">Height:</label>
-    <input type="number" id="heightCylinder" step="1" />
-
-    <button onclick="calculateVolumeCylinder()">Calculate Volume</button>
-    <p id="cylinderVolume"></p>
-
-    <!--volume of sphere-->
-    <h3>Volume of Sphere</h3>
-    <label for="radiusSphere">Radius:</label>
-    <input type="number" id="radiusSphere" step="1" />
-
-    <button onclick="calculateVolumeSphere()">Calculate Volume</button>
-    <p id="sphereVolume"></p>
-
-    <!--volume of pyramid-->
-    <h3>Volume of Pyramid</h3>
-    <label for="lengthPyramid">Length:</label>
-    <input type="number" id="lengthPyramid" step="1" />
-
-    <label for="widthPyramid">Width:</label>
-    <input type="number" id="widthPyramid" step="1" />
-
-    <label for="heightPyramid">Height:</label>
-    <input type="number" id="heightPyramid" step="1" />
-
-    <button onclick="calculateVolumePyramid()">Calculate Volume</button>
-    <p id="pyramidVolume"></p>
+      <!--equilateral-->
+      <h3>Equilateral Triangle</h3>
+      <label for="numberArea">Side:</label>
+      <input type="number" id="numberArea" step="1" />
+      <button onclick="calculateEquilateralArea()">Calculate Area</button>
+      <p id="equilateralArea"></p>
+    </div>
 
     <script src="main.js"></script>
   </body>
