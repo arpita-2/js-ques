@@ -77,5 +77,17 @@ function calculatePerimeterOfCircle() {
   const perimeterOfCircle = 2 * Math.PI * radiusOfCircle;
 
   document.getElementById("circlePerimeter").textContent =
-    "Perimeter of Circle" + perimeterOfCircle;
+    "Perimeter of Circle: " + perimeterOfCircle;
+}
+
+//perimeter of equilateral triangle
+
+function calculatePerimeterOfEquilateral() {
+  const sideOfEquilateral = parseFloat(
+    document.getElementById("perimeterEquilateral").value
+  );
+  const perimeterOfEquilateral = 3 * sideOfEquilateral;
+
+  document.getElementById("equilateralPerimeter").textContent =
+    "Perimeter of Equilateral Triangle: " + perimeterOfEquilateral;
 }
