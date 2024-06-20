@@ -91,3 +91,20 @@ function calculatePerimeterOfEquilateral() {
   document.getElementById("equilateralPerimeter").textContent =
     "Perimeter of Equilateral Triangle: " + perimeterOfEquilateral;
 }
+
+//perimeter of  paralellogram
+
+function calculatePerimeterOfParalellogram() {
+  const sideOfParalellogram = parseFloat(
+    document.getElementById("sideParalellogram").value
+  );
+
+  const baseOfParalellogram = parseFloat(
+    document.getElementById("baseParalellogram").value
+  );
+  const perimeterOfParalellogram =
+    2 * (sideOfParalellogram + baseOfParalellogram);
+
+  document.getElementById("paralellogramPerimeter").textContent =
+    "Perimeter of paralellogram: " + perimeterOfParalellogram;
+}
